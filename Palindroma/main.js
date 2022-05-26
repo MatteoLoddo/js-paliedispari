@@ -10,8 +10,7 @@ function palindroma (parolaInseritaDallUtente){
     // scomporre la parola inserita in lettera per lettera
     // parolaInseritaDallUtente.split("")
     // controllo lunghezza della parola dopo aver diviso le lettere
-    console.log(parolaInseritaDallUtente.length);
-    debugger
+    console.log('lunghezza della parola e di ' + parolaInseritaDallUtente.length + " caratteri" );
 
     const parolaScomposta = []
     let parolaRicompostaAlContrario =""
@@ -19,22 +18,20 @@ function palindroma (parolaInseritaDallUtente){
 // creare il ciclo per pushare le lettere al contrario
     for( let i=0; i<parolaInseritaDallUtente.length; i++){
 
-        console.log(parolaInseritaDallUtente[i]);
     // pushare sempre prima gli ultimi elementi rispetto a quelli venuti prima che corrispondono a [i]
     parolaScomposta.unshift(parolaInseritaDallUtente[i]);
     
     // ricomponiamo la stringa dall array parolaScomposta
     parolaRicompostaAlContrario = (parolaScomposta.join(''))
-    console.log(parolaRicompostaAlContrario);
+    
 
     }  
-// condizione che se e palindroma scrive "ok" altrimenti "non lo e"
+    console.log("la parola composta al contrario e " + parolaRicompostaAlContrario);
+// condizione che se e palindroma scrive "ok" altrimenti "non e palindroma"
     if(parolaRicompostaAlContrario === parolaUtente){
         console.log("ok la parola e palindroma")
+    }else{console.log("la parola che hai inserito non e palindroma")
     }
-    console.log("la parola che hai inserito non e palindroma")
-
-    console.log(parolaScomposta.length);
 }
 
 
