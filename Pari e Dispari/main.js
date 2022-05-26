@@ -27,30 +27,24 @@ function somma (numerodelpc , numeroUser){
 }
 
 somma(numberGenerated,userNumberChoice)
+
 const risultatoSomma = somma(numberGenerated,userNumberChoice)
+
 console.log(somma(numberGenerated,userNumberChoice));
+
+
 let pari = 0
+
 if( risultatoSomma %2 === 0){
 
 }else{
     pari = -1
 }
 
-if(userChoice === "pari")
-// console.log(resultatoSomma);
 
-// function pariDispari (resultatoSomma){
+
+if(userChoice === "pari"){
     
-//     if(resultatoSomma %2 === 0){
-        
-//         return 
-//     }else{
-//         console.log("il risultato e disprari");
-//     }
-    
-// }
+}
 
-// pariDispari()
-
-// console.log(pariDispari());
 
